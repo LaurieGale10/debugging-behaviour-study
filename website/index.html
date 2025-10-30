@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Research Project Programming Exercises</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+    </style>
+
+</head>
+<body>
+    <div class="page">
+        <div id="titleDiv">
+            <h1 id="programmingExercisesTitle">Programming Exercises</h1>
+            <h1 id="completedExercisesTitle">All done!</h1>
+        </div>
+
+        <div id="completedDiv">
+            <p>In the original study, this page directed students to a questionnaire relating to their attitudes and emotions towards debugging. For this version, click the button below to view and attempt the exercises again.</p>
+            <button type="button" onclick="retryExercises()">
+                Retry Exercises
+            </button>
+        </div>
+    
+        <div id="exercisesDiv">
+            <p>There are 5 programming exercises to complete which, will be displayed one at a time below. Once you’ve finished, press the <strong>NEXT EXERCISE</strong> button at the bottom of the page. But beware- once you’ve pressed next you can’t go back!</p>
+            <p><strong>To help you find all of the errors, make sure you test your code with a range of values using the pink run button.</strong></p>
+            <p>These exercises are not assessed, so don't worry if you are struggling to solve all of the errors. Try your best and feel free to move on if you are finding an exercise too difficult.</p>
+
+            <h2>Programming Exercise <span id="exerciseNumber"></span></h2>
+    
+            <p id="exerciseDescription"></p>
+
+            <div id="ide">
+                <iframe id="code-editor" title="Code Sandbox" onload="setupFrame(exerciseNumber)" style="resize: none; border: none; overflow: hidden; background-color: transparent; width: 100%; height: 100%;">
+                </iframe>
+            </div>
+        
+            <div class="buttons">
+                <button type="button" id="nextExercise" onclick="requestLogsAndPostData()">Next Exercise</button>
+                <button type="button" id="finish" onclick="requestLogsAndPostData()">Finish</button>
+            </div>
+        </div>
+        <p style="font-style: italic;">Part of the "Investigating the Debugging Behaviour and Attitudes of KS3 Students" Research Study</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

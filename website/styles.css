@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+}
+
+p, button {
+    font-family: 'Inter';
+}
+
+button {
+    font-size: 22px;
+    border-radius: 10px;
+    border-width: 2.5px;
+    padding: 0.75%;
+    background-color: rgb(243, 240, 240);
+    color: green;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.page {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.buttons {
+    margin-top: 1%;
+    margin-bottom: 2.5%;
+}
+
+#completedDiv {
+    display: none;
+}
+
+#finish {
+    display: none;
+}
+
+#completedExercisesTitle {
+    display: none;
+}
+
+#titleDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+#logo {
+    max-width: 320px;
+    float: right;
+    margin-top: 2%;
+}
