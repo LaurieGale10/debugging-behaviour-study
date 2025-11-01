@@ -1,0 +1,163 @@
+[
+    {
+        "label": "First move",
+        "children": [
+            {"label": "Made changes before running code"},
+            {"label": "Ran code before making changes"}
+        ]
+    },
+    {
+        "label": "Positive debugging indicators",
+        "children": [
+            {"label": "Entered incorrect input (implies testing)"},
+            {"label": "Made improvements to program"},
+            {"label": "First change on line referred to in error message"}
+        ]
+    },
+    {
+        "label": "Introduced additional error(s)",
+        "children": [
+            {"label": "Reverted corrective change(s)"},
+            {
+                "label": "Introduced additional syntax error(s)",
+                "children": [
+                    {
+                        "label": "Incorrect syntactical changes to existing statements",
+                        "children": [
+                            {"label": "Incorrect syntactical changes to output statements"},
+                            {"label": "Incorrect syntactical changes involving selection"},
+                            {"label": "Incorrect syntactical changes involving iteration"},
+                            {"label": "Incorrect syntactical changes to variable assignments"},
+                            {"label": "Incorrect syntactical changes involving other statements in program"}        
+                        ]
+                    },
+                    {
+                        "label": "Incorrect syntactical changes involving symbols",
+                        "children": [
+                            {
+                                "label": "Incorrect syntactical changes to operators",
+                                "children": [
+                                    {"label": "Incorrect syntactical changes to mathematical operators"},
+                                    {"label": "Incorrect syntactical changes to logical operators"}
+                                ]
+                            },
+                            {"label": "Incorrect syntactical changes to other symbols"}
+                        ]
+                    },
+                    {"label": "Incorrect syntactical changes involving fusion or distribution of multiple lines of code"},
+                    {"label": "Addition of non-language-specific strings"},
+                    {"label": "Incorrect syntactical changes involving variable references"},
+                    {"label": "Incorrect syntactical changes to whitespace of program"}
+                ]
+            },
+            {
+                "label": "Introduced additional runtime error(s)",
+                "children": [
+                    {"label": "Incorrect semantic changes to variable assignments"},
+                    {"label": "Incorrect semantic changes to variable references"},
+                    {"label": "Incorrect semantic changes to other statements in program"}
+                ]
+            },
+            {
+                "label": "Introduced additional type error(s)",
+                "children": [
+                    {"label": "Incorrect typewise changes involving variables"},
+                    {"label": "Incorrect typewise changes to function call"},
+                    {"label": "Incorrect typewise changes to other statements in program"}
+                ]
+            },
+            {
+                "label": "Introduced additional logical error(s)",
+                "children": [
+                    {"label": "Logically incorrect changes involving output statements"},
+                    {
+                        "label": "Logically incorrect changes to operators",
+                        "children": [
+                            {"label": "Logically incorrect changes to mathematical operators"},
+                            {"label": "Logically incorrect changes to logical operators"}
+                        ]
+                    },
+                    {"label": "Logically incorrect changes involving variables"},
+                    {"label": "Logically incorrect changes to program flow"},
+                    {"label": "Logically incorrect changes to other statements"}
+                ]
+            }
+        ]
+    },
+    {
+        "label": "Resolved error(s)",
+        "children": [
+            {
+                "label": "Resolved syntax error(s)",
+                "children": [
+                    {"label": "Correctly resolved syntax error"},
+                    {"label": "Resolved syntax error by changing syntax of erroneous component"},
+                    {"label": "Introduced logical error from resolution of syntax error"},
+                    {"label": "Hard-coded resolution of syntax error"}
+                ]
+            },
+            {
+                "label": "Resolved runtime error(s)",
+                "children": [
+                    {"label": "Correctly resolved runtime error"},
+                    {"label": "Introduced logical error from resolution of runtime error"},
+                    {"label": "Hard-coded resolution of runtime error"}
+                ]
+            },
+            {
+                "label": "Resolved type error(s)",
+                "children": [
+                    {"label": "Correctly resolved type error"},
+                    {"label": "Hard-coded resolution of type error"}
+                ]
+            },
+            {
+                "label": "Resolved logical error(s)",
+                "children": [
+                    {
+                        "label": "Correctly resolved logical error",
+                        "children": [
+                            {"label": "Correctly resolved logical error while code not running"},
+                            {"label": "Correctly resolved logical error after a single successful run"},
+                            {"label": "Correctly resolved logical error after repeated successful runs"}
+                        ]
+                    },
+                    {"label": "Hard-coded resolution of logical error"}
+                ]
+            }
+        ]
+    },
+    {
+        "label": "Inconsequential changes",
+        "children": [
+            {"label": "Addition/removal or editing of comments"},
+            {"label": "Inconsequential changes involving symbols"},
+            {"label": "Inconsequential changes to variable references"},
+            {"label": "Inconsequential changes to whitespace of program"},
+            {
+                "label": "Changes to existing statements in the program",
+                "children": [
+                    {"label": "Inconsequential changes to (existing) outputs"},
+                    {"label": "Inconsequential changes to (existing) inputs"},
+                    {"label": "Inconsequential changes to (existing) other statements"}
+                ]
+            },
+            {"label": "Addition of unnecessary code"}
+        ]
+    },
+    {
+        "label": "Miscellaneous behaviour",
+        "children": [
+            {
+                "label": "Repeated runs",
+                "children": [
+                    {"label": "Repeated successful runs when code successfully runs"},
+                    {"label": "Repeated unsuccessful runs with no changes"},
+                    {"label": "Repeatedly ran code with no changes at beginning of exercise"}
+                ]
+            },
+            {"label": "Reverted previous changes"}
+        ]
+    },
+    {"label": "Didn't attempt exercise"}
+]
