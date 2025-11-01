@@ -1,0 +1,78 @@
+label,n_participants,pct_participants,n_exercise_attempts,pct_exercise_attempts
+First move,72,98.63,322,100.0
+	Made changes before running code,47,64.38,110,34.16
+	Ran code before making changes,69,94.52,212,65.84
+Positive debugging indicators,71,97.26,259,80.43
+	Entered incorrect input (implies testing),3,4.11,3,0.93
+	Made improvements to program,2,2.74,5,1.55
+	First change on line referred to in error message,71,97.26,257,79.81
+Introduced additional error(s),69,94.52,245,76.09
+	Reverted corrective change(s),33,45.21,43,13.35
+	Introduced additional syntax error(s),63,86.3,184,57.14
+		Incorrect syntactical changes to existing statements,59,80.82,158,49.07
+			Incorrect syntactical changes to output statements,42,57.53,67,20.81
+			Incorrect syntactical changes involving selection,39,53.42,51,15.84
+			Incorrect syntactical changes involving iteration,18,24.66,18,5.59
+			Incorrect syntactical changes to variable assignments,41,56.16,66,20.5
+			Incorrect syntactical changes involving other statements in program,3,4.11,3,0.93
+		Incorrect syntactical changes involving symbols,48,65.75,92,28.57
+			Incorrect syntactical changes to operators,25,34.25,34,10.56
+				Incorrect syntactical changes to mathematical operators,25,34.25,34,10.56
+				Incorrect syntactical changes to logical operators,2,2.74,2,0.62
+			Incorrect syntactical changes to other symbols,38,52.05,64,19.88
+		Incorrect syntactical changes involving fusion or distribution of multiple lines of code,21,28.77,27,8.39
+		Addition of non-language-specific strings,14,19.18,19,5.9
+		Incorrect syntactical changes involving variable references,15,20.55,17,5.28
+		Incorrect syntactical changes to whitespace of program,28,38.36,45,13.98
+	Introduced additional runtime error(s),39,53.42,61,18.94
+		Incorrect semantic changes to variable assignments,31,42.47,45,13.98
+		Incorrect semantic changes to variable references,12,16.44,16,4.97
+		Incorrect semantic changes to other statements in program,10,13.7,10,3.11
+	Introduced additional type error(s),33,45.21,45,13.98
+		Incorrect typewise changes involving variables,24,32.88,27,8.39
+		Incorrect typewise changes to function call,12,16.44,15,4.66
+		Incorrect typewise changes to other statements in program,15,20.55,17,5.28
+	Introduced additional logical error(s),53,72.6,94,29.19
+		Logically incorrect changes involving output statements,12,16.44,14,4.35
+		Logically incorrect changes to operators,21,28.77,26,8.07
+			Logically incorrect changes to mathematical operators,16,21.92,18,5.59
+			Logically incorrect changes to logical operators,8,10.96,8,2.48
+		Logically incorrect changes involving variables,26,35.62,34,10.56
+		Logically incorrect changes to program flow,29,39.73,38,11.8
+		Logically incorrect changes to other statements,3,4.11,3,0.93
+Resolved error(s),66,90.41,268,83.23
+	Resolved syntax error(s),65,89.04,206,63.98
+		Correctly resolved syntax error,59,80.82,148,45.96
+		Resolved syntax error by changing syntax of erroneous component,18,24.66,23,7.14
+		Introduced logical error from resolution of syntax error,39,53.42,46,14.29
+		Hard-coded resolution of syntax error,5,6.85,5,1.55
+	Resolved runtime error(s),61,83.56,100,31.06
+		Correctly resolved runtime error,43,58.9,67,20.81
+		Introduced logical error from resolution of runtime error,14,19.18,16,4.97
+		Hard-coded resolution of runtime error,17,23.29,17,5.28
+	Resolved type error(s),34,46.58,34,10.56
+		Correctly resolved type error,26,35.62,26,8.07
+		Hard-coded resolution of type error,8,10.96,8,2.48
+	Resolved logical error(s),56,76.71,170,52.8
+		Correctly resolved logical error,55,75.34,164,50.93
+			Correctly resolved logical error while code not running,53,72.6,103,31.99
+			Correctly resolved logical error after a single successful run,27,36.99,42,13.04
+			Correctly resolved logical error after repeated successful runs,35,47.95,63,19.57
+		Hard-coded resolution of logical error,19,26.03,21,6.52
+Inconsequential changes,71,97.26,209,64.91
+	Addition/removal or editing of comments,7,9.59,9,2.8
+	Inconsequential changes involving symbols,30,41.1,52,16.15
+	Inconsequential changes to variable references,4,5.48,4,1.24
+	Inconsequential changes to whitespace of program,64,87.67,136,42.24
+	Changes to existing statements in the program,66,90.41,152,47.2
+		Inconsequential changes to (existing) outputs,48,65.75,69,21.43
+		Inconsequential changes to (existing) inputs,19,26.03,22,6.83
+		Inconsequential changes to (existing) other statements,55,75.34,91,28.26
+	Addition of unnecessary code,15,20.55,20,6.21
+Miscellaneous behaviour,70,95.89,243,75.47
+	Repeated runs,69,94.52,205,63.66
+		Repeated successful runs when code successfully runs,49,67.12,89,27.64
+		Repeated unsuccessful runs with no changes,55,75.34,135,41.93
+		Repeatedly ran code with no changes at beginning of exercise,15,20.55,16,4.97
+	Reverted previous changes,61,83.56,159,49.38
+Didn't attempt exercise,29,39.73,58,18.01
