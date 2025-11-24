@@ -296,6 +296,32 @@ def filter_students_who_resolved_any_error(**kwargs) -> dict[str, list[str]]:
                             "Hard-coded resolution of logical error"]
     return filter_participants_with_codes(resolved_error_codes)
 
+def filter_students_who_correctly_resolved_any_error(**kwargs) -> dict[str, list[str]]:
+    """Filters students who correctly resolved at least one error in at least one of their attempted exercises, using a list of codes associated with correctly resolving errors
+
+    Returns:
+        dict[str, list[str]]: A dictionary containing a list of participantids (under the key 'participantid') who correctly resolved an error.
+    """
+    correctly_resolved_error_codes = ["Correctly resolved syntax error",
+                                      "Correctly resolved runtime error",
+                                      "Correctly resolved type error",
+                                      "Correctly resolved logical error after a single successful run",
+                                      "Correctly resolved logical error after repeated successful runs", 
+                                      "Correctly resolved logical error while code not running"]
+    return filter_participants_with_codes(correctly_resolved_error_codes)
+
+def filter_students_who_hard_coded_resolved_any_error(**kwargs) -> dict[str, list[str]]:
+    """Filters students who hard-coded the resolution of at least one error in at least one of their attempted exercises, using a list of codes associated with hard-coded resolutions
+
+    Returns:
+        dict[str, list[str]]: A dictionary containing a list of participantids (under the key 'participantid') who hard-coded the resolution of an error.
+    """
+    hard_coded_resolution_codes = ["Hard-coded resolution of syntax error",
+                                   "Hard-coded resolution of runtime error",
+                                   "Hard-coded resolution of type error",
+                                   "Hard-coded resolution of logical error"]
+    return filter_participants_with_codes(hard_coded_resolution_codes)
+
 def filter_students_who_resolved_logical_error_while_code_not_running(**kwargs) -> dict[str, list[str]]:
     """Gets the list of participantids for participants who resolved a logical error while their code wasn't successfully executing.
     

@@ -126,6 +126,25 @@ def get_time_between_runs(*, filtered_ids: dict[str, list[str]], **kwargs) -> li
                 time_between_runs_per_exercise[5].append(time_between_runs)
     return time_between_runs_per_exercise
 
+def get_time_between_two_runs(*, filtered_ids: dict[str, list[str]], run1: int, run2: int, **kwargs) -> list[list[int]]:
+    """Gets the amount of time between two specified runs for a given list of participants or progam logs
+
+    Args:
+        filtered_ids (dict[str, list[str]]): The list of participantids or programlogids to filter by
+
+    Returns:
+        list[list[int]]: A list containing the time between the two specified runs for each attempted exercise, grouped by exercise number
+    """
+    time_between_two_runs_per_exercise = [[], [], [], [], [], []]
+    filtered_program_logs = get_filtered_program_logs(filtered_ids = filtered_ids, **kwargs)
+    for index, program_log in filtered_program_logs.iterrows():
+        snapshots = program_log["logs_snapshots"]
+        if run2 > run1 and len(snapshots) >= run2:
+            time_between_two_runs = (snapshots[run2]["timestamp"] - snapshots[run1]["timestamp"]) / 1000
+            time_between_two_runs_per_exercise[program_log["exercise_number"] - 1].append(time_between_two_runs)
+            time_between_two_runs_per_exercise[5].append(time_between_two_runs)
+    return time_between_two_runs_per_exercise
+
 def get_time_between_all_unchanged_runs(*, filtered_ids: dict[str, list[str]], **kwargs) -> list[list[int]]:
     """Gets the average amount of time between each unchanged run for a given list of participants or progam logs
 
