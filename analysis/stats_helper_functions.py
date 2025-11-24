@@ -55,11 +55,13 @@ def quartiles_for_exercise(values_per_exercise:list[list[int] | list[float]]) ->
 
     for i in range(6):
         if values_per_exercise[i] != []:
-            distributions_per_exercise.append([min(values_per_exercise[i]),
-                                            np.percentile(values_per_exercise[i], 25),
-                                            np.percentile(values_per_exercise[i], 50),
-                                            np.percentile(values_per_exercise[i], 75),
-                                            max(values_per_exercise[i])])
+            distributions_per_exercise.append([
+                float(round(min(values_per_exercise[i]), 2)),
+                float(round(np.percentile(values_per_exercise[i], 25), 2)),
+                float(round(np.percentile(values_per_exercise[i], 50), 2)),
+                float(round(np.percentile(values_per_exercise[i], 75), 2)),
+                float(round(max(values_per_exercise[i]), 2))
+            ])
         else:
             #Adds an empty list if there are no entries in the total_times_per_exercises for a given exercise
             #i.e. if none of the list of participants had attempted a given exercise
@@ -79,7 +81,7 @@ def skewness_for_exercises(values_per_exercise:list[list[int] | list[float]]) ->
 
     for i in range(6):
         if values_per_exercise[i] != []:
-            distributions_per_exercise.append(skew(values_per_exercise[i], bias=False))
+            distributions_per_exercise.append(float(round(skew(values_per_exercise[i], bias=False), 2)))
         else:
             #Adds an empty list if there are no entries in the total_times_per_exercises for a given exercise
             #i.e. if none of the list of participants had attempted a given exercise
