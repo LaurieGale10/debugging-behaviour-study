@@ -1,5 +1,4 @@
 *.docx
 website/venv
 venv/
-analysis/loading_services
-analysis/__pycache__/
+**/__pycache__/
