@@ -1,10 +1,10 @@
 # Repository Overview
 This repository contains the study materials and analysis for the *An Investigation Into K-12 Students' Debugging Behaviour in Python* paper.
 
-As we do not have permission to publish students' data, none of this code will properly run. We still make it publicly available to document the analysis we performed.
+As we do not have permission to publish students' data, none of this code will properly run. We still make it publicly available to document the analysis we performed - just view `log_data_analysis.pdf` or `log_data_analysis.html`.
 
 The repository has the following structure:
-- `log_data_analysis.pdf` and `log_data_analysis.ipynb`: A jupyter notebook containing the analysis reported in the paper (we did not have ethical approval to publish students' log data so the running the notebook will result in errors).
+- `log_data_analysis.pdf/html/ipynb`: A jupyter notebook containing the analysis reported in the paper (we did not have ethical approval to publish students' log data so the running the notebook will result in errors).
 - `analysis`: Materials used to analysis the log data, including:
   - `codebook.pdf`: The codebook used to code the log data (also in programmatic form in `codebook.json`).
   - `loading_services/`: Directory of files used to analyse the log data.
