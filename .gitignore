@@ -1,4 +1,7 @@
 *.docx
+*.xlsx
 website/venv
 venv/
 **/__pycache__/
+.Rproj.user
+.vscode/
