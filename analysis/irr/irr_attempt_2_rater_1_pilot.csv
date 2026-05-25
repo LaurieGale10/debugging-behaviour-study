@@ -1,0 +1,78 @@
+﻿Code,participant_48_exercise_1,participant_48_exercise_2,participant_48_exercise_3,participant_48_exercise_4
+First move,No,No,No,No
+   Made changes before running code,Yes,No,Yes,Yes
+   Ran code before making changes,No,Yes,No,No
+Positive debugging indicators,No,No,No,No
+   Entered incorrect input,No,No,No,No
+   Made improvements to program,No,No,No,No
+   First change on line referred to in error message,Yes,Yes,Yes,No
+Introduced additional error(s),No,No,No,No
+   Reverted corrective change(s),No,No,No,No
+   Introduced additional syntax error(s),No,No,No,No
+      Incorrect syntactical changes to existing statements,No,No,No,No
+         Incorrect syntactical changes to output statements,Yes,No,Yes,No
+         Incorrect syntactical changes involving selection,No,No,No,No
+         Incorrect syntactical changes involving iteration,No,No,No,No
+         Incorrect syntactical changes to variable assignments,No,Yes,No,No
+         Incorrect syntactical changes involving other statements in program,No,No,No,No
+      Incorrect syntactical changes involving symbols,No,No,No,No
+         Incorrect syntactical changes to operators,No,No,No,No
+            Incorrect syntactical changes to mathematical operators,No,No,No,No
+            Incorrect syntactical changes to logical operators,No,No,No,No
+         Incorrect syntactical changes to other symbols,Yes,Yes,Yes,No
+         Incorrect syntactical changes involving fusion or distribution of multiple lines of code,No,Yes,No,No
+      Addition of non-Python strings,No,No,No,No
+      Incorrect syntactical changes involving variable references,No,No,No,No
+      Incorrect syntactical changes to whitespace of program,No,Yes,No,No
+   Introduced runtime error(s),No,No,No,No
+      Incorrect semantic changes to variable assignments,Yes,No,Yes,No
+      Incorrect semantic changes to variable references,No,No,No,No
+      Incorrect semantic changes to other statements in program,No,No,No,No
+   Introduced type error(s),No,No,No,No
+      Incorrect typewise changes involving variables,No,No,No,No
+      Incorrect typewise changes to function call,No,No,No,No
+      Incorrect typewise changes to other statements in program,No,No,No,No
+   Introduced logical error(s),No,No,No,No
+      Logically incorrect changes involving output statements,No,No,No,Yes
+      Logically incorrect changes to operators,No,No,No,No
+         Logically incorrect changes to mathematical operators,No,No,No,No
+         Logically incorrect changes to logical operators,No,No,No,No
+      Logically incorrect changes involving variables,No,No,No,No
+      Logically incorrect changes to program flow,No,No,No,No
+      Logically incorrect changes to other statements,No,No,No,No
+Resolved error(s),No,No,No,No
+   Resolved syntax error(s),No,No,No,No
+      Correctly resolved syntax error,No,Yes,Yes,No
+      Resolved syntax error by changing syntax of erroneous component,Yes,No,Yes,No
+      Introduced logical error from resolution of syntax error,No,No,No,No
+      Hard-coded resolution of syntax error,No,No,No,No
+   Resolved runtime error(s),No,No,No,No
+      Correctly resolved runtime error,Yes,No,No,Yes
+      Introduced logical error from resolution of runtime error,No,No,No,No
+      Hard-coded resolution of runtime error,No,No,No,No
+   Resolved type error(s),No,No,No,No
+      Correctly resolved type error,No,No,No,Yes
+      Hard-coded resolution of type error,No,No,No,No
+   Resolved logical error(s),No,No,No,No
+      Correctly resolved logical error,No,No,No,No
+         Correctly resolved logical error while code not running,No,No,Yes,No
+         Correctly resolved logical error after a single successful run,No,No,No,Yes
+         Correctly resolved logical error after repeated successful runs,No,No,Yes,Yes
+      Hard-coded resolution of logical error,No,No,No,No
+Inconsequential changes,No,No,No,No
+   Addition/removal or editing of comments,No,No,No,No
+   Inconsequential changes involving symbols,No,Yes,No,No
+   Inconsequential changes to variable references,No,Yes,No,No
+   Inconsequential changes to whitespace of program,No,No,No,No
+   Changes to existing statements in the program,No,No,No,No
+      Inconsequential changes to (existing) outputs,No,No,No,No
+      Inconsequential changes to (existing) inputs,No,No,No,No
+      Inconsequential changes to (existing) other statements,No,Yes,No,No
+   Addition of unnecessary code,No,No,No,Yes
+Miscellaneous behaviour,No,No,No,No
+   Repeated runs,No,No,No,No
+      Repeated ran successfully executing program,No,No,Yes,No
+      Repeatedly ran erroneous program,Yes,Yes,Yes,No
+      Repeatedly ran program at beginning of exercise,No,Yes,No,No
+   Reverted previous changes,Yes,Yes,Yes,Yes
+Any other comments,Does reverted previous changes allude to exact changes that are reverted or replacement of a previous change with something else?,Run 32 is unclear - arguably adds a type error to line 3 or is inconsequential (I went for the latter),,Consider run 2 to be addition of unnecessary code (which is then reverted in run 3)
