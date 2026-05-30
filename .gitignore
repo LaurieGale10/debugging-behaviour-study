@@ -5,3 +5,5 @@ venv/
 **/__pycache__/
 .Rproj.user
 .vscode/
+irr/mvalpha_cpp.r
+irr/mvalpha_internal_functions.cpp
