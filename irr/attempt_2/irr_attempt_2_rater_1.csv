@@ -1,0 +1,78 @@
+﻿Code,participant_40_exercise_1,participant_40_exercise_2,participant_40_exercise_3,participant_40_exercise_4,participant_40_exercise_5,participant_41_exercise_1,participant_41_exercise_2,participant_41_exercise_3,participant_42_exercise_1,participant_42_exercise_2,participant_42_exercise_3,participant_42_exercise_4,participant_43_exercise_1,participant_43_exercise_2,participant_43_exercise_3,participant_43_exercise_4,participant_44_exercise_1,participant_44_exercise_2,participant_44_exercise_3,participant_45_exercise_1,participant_45_exercise_2,participant_45_exercise_3,participant_45_exercise_4,participant_45_exercise_5
+First move
+   Made changes before running code,Yes,Yes,No,No,No,Yes,No,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No
+   Ran code before making changes,No,No,Yes,Yes,Yes,No,Yes,No,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
+Positive debugging indicators,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+   Entered incorrect input,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No
+   Made improvements to program,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+   First change on line referred to in error message,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,No,No,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+Introduced additional error(s)
+   Reverted corrective change(s),No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes
+   Introduced additional syntax error(s)
+      Incorrect syntactical changes to existing statements
+         Incorrect syntactical changes to output statements,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Yes,No,No,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes
+         Incorrect syntactical changes involving selection,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,No,Yes,No,No,No,No,Yes,No,No
+         Incorrect syntactical changes involving iteration,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No
+         Incorrect syntactical changes to variable assignments,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,Yes,No,Yes,Yes,Yes,No,No,Yes,No,No,No
+         Incorrect syntactical changes involving other statements in program,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+      Incorrect syntactical changes involving symbols
+         Incorrect syntactical changes to operators
+            Incorrect syntactical changes to mathematical operators,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,Yes,No
+            Incorrect syntactical changes to logical operators,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+         Incorrect syntactical changes to other symbols,No,No,No,No,No,Yes,Yes,Yes,Yes,No,Yes,No,No,Yes,No,Yes,Yes,Yes,No,No,Yes,No,No,No
+         Incorrect syntactical changes involving fusion or distribution of multiple lines of code,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No
+      Addition of non-Python strings,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No
+      Incorrect syntactical changes involving variable references,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No
+      Incorrect syntactical changes to whitespace of program,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No
+   Introduced runtime error(s)
+      Incorrect semantic changes to variable assignments,Yes,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No
+      Incorrect semantic changes to variable references,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No
+      Incorrect semantic changes to other statements in program,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No
+   Introduced type error(s)
+      Incorrect typewise changes involving variables,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No
+      Incorrect typewise changes to function call,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes
+      Incorrect typewise changes to other statements in program,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No
+   Introduced logical error(s)
+      Logically incorrect changes involving output statements,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No
+      Logically incorrect changes to operators
+         Logically incorrect changes to mathematical operators,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No
+         Logically incorrect changes to logical operators,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+      Logically incorrect changes involving variables,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No
+      Logically incorrect changes to program flow,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No
+      Logically incorrect changes to other statements,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No
+Resolved error(s)
+   Resolved syntax error(s)
+      Correctly resolved syntax error,No,Yes,Yes,No,Yes,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,Yes,Yes,No,Yes,Yes,No,Yes
+         Resolved syntax error by changing syntax of erroneous component,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+         Introduced logical error from resolution of syntax error,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,Yes,No,No,No,No
+         Hard-coded resolution of syntax error,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+   Resolved runtime error(s)
+      Correctly resolved runtime error,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No
+      Introduced logical error from resolution of runtime error,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,No
+      Hard-coded resolution of runtime error,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No
+   Resolved type error(s)
+      Correctly resolved type error,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No
+      Hard-coded resolution of type error,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+   Resolved logical error(s)
+      Correctly resolved logical error
+         Correctly resolved logical error while code not running,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Yes,Yes,No,Yes
+         Correctly resolved logical error after a single successful run,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No
+         Correctly resolved logical error after repeated successful runs,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes
+      Hard-coded resolution of logical error,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+Inconsequential changes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+   Addition/removal or editing of comments,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+   Inconsequential changes involving symbols,No,No,No,No,No,No,Yes,Yes,No,No,No,No,Yes,No,Yes,Yes,No,No,No,Yes,No,Yes,Yes,No
+   Inconsequential changes to variable references,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No
+   Inconsequential changes to whitespace of program,No,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,Yes,No,Yes,Yes,Yes,Yes,No,Yes,No,No,No
+   Changes to existing statements in the program
+      Inconsequential changes to (existing) outputs,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,Yes,No,No,No,No,Yes,No,Yes,No,No,Yes,No
+      Inconsequential changes to (existing) inputs,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No
+      Inconsequential changes to (existing) other statements,Yes,No,No,Yes,No,No,Yes,No,No,No,No,No,Yes,No,Yes,Yes,Yes,Yes,No,No,No,Yes,Yes,No
+   Addition of unnecessary code,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+Miscellaneous behaviour,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+   Repeated runs
+      Repeated ran successfully executing program,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,Yes,No,Yes
+      Repeatedly ran erroneous program,No,No,No,No,No,No,Yes,No,Yes,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,Yes,Yes,Yes
+      Repeatedly ran program at beginning of exercise,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No
+   Reverted previous changes,No,No,No,No,Yes,Yes,Yes,Yes,Yes,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes
+Any other comments,,,,Think logical resolutions should be after repeated successful runs,,,,,,"Run 22 includes an inconsequential change over two lines, so I consider it to be an inconsequential change to other statements and the input of the program",,,,,"Don't count change in run 9 as resolution of type error; they don't resolve the underlying defect that's in the program, just the part of the program where the infection arises",
