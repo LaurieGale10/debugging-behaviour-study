@@ -9,6 +9,7 @@ The repository has the following structure:
   - `codebook.pdf`: The codebook used to code the log data (also in programmatic form in `codebook.json`).
   - `loading_services/`: Directory of files used to analyse the log data.
   - The utility files used for data analysis, such as retrieving students and exercise attempts with a particular code (`core_filter_functions.py` and `filter_functions.py`), statistical analysis (`stats_functions.py` and `stats_helper_function.py`), and data visualisation (`visualisation.py`).
+  - `irr`: Analysis files used to perform the agreement procedure using Krippendorff's multi-value alpha (see `irr_calculation.ipynb` for details of this).
 - `results`: The final codebook with frequencies per student and exercise attempts (`codebook_frequency.csv`).
 - `study_materials`
   - `debugging_exercises`: The debugging exercises that students attempted. Contains the original erroneous Python programs posed to students (`*_original.py`) and the corrected versions (`*_correct.py`).
