@@ -11,13 +11,7 @@ extract_category_dataframe <- function(df, category_codes) {
             }
         )
     )
-    
-    both_null_rows <- mapply(
-        function(c1, c2) is.null(c1) && is.null(c2),
-        category_dataframe[[1]],
-        category_dataframe[[2]]
-    )
-    category_dataframe <- category_dataframe[!both_null_rows, ]
+
     category_dataframe
 }
 
@@ -131,4 +125,106 @@ miscellaneous_behaviour_codes <- c(
 
 get_miscellaneous_behaviour_codes <- function() {
     miscellaneous_behaviour_codes
+}
+
+create_category_csv_with_agreement <- function(
+    category_dataframe,
+    coder1_col = 1,
+    coder2_col = 2,
+    both_empty_as_na = TRUE
+) {
+    if (coder1_col < 1 || coder1_col > ncol(category_dataframe) ||
+        coder2_col < 1 || coder2_col > ncol(category_dataframe)) {
+        stop("coder column indices are out of bounds")
+    }
+
+    to_str <- function(x) {
+        if (is.null(x) || length(x) == 0) NA_character_ else paste(x, collapse = ";")
+    }
+
+    to_set <- function(x) {
+        if (is.null(x) || length(x) == 0) {
+            return(character(0))
+        }
+
+        values <- trimws(as.character(x))
+        values <- values[nzchar(values)]
+        unique(values)
+    }
+
+    is_empty_codes <- function(x) {
+        is.null(x) || length(x) == 0
+    }
+
+    csv_df <- as.data.frame(lapply(category_dataframe, function(col) {
+        vapply(col, to_str, character(1))
+    }), stringsAsFactors = FALSE)
+
+    coder1 <- category_dataframe[[coder1_col]]
+    coder2 <- category_dataframe[[coder2_col]]
+
+    n_agreements_fn <- function(a_set, b_set) {
+        length(intersect(a_set, b_set))
+    }
+
+    n_disagreements_fn <- function(a_set, b_set) {
+        length(setdiff(union(a_set, b_set), intersect(a_set, b_set)))
+    }
+
+    percentage_agreement_fn <- function(n_agreements, n_disagreements) {
+        denominator <- n_agreements + n_disagreements
+        if (denominator == 0) {
+            return(NA_real_)
+        }
+        (n_agreements / denominator) * 100
+    }
+
+    row_metrics <- mapply(function(a, b) {
+        if (both_empty_as_na && is_empty_codes(a) && is_empty_codes(b)) {
+            return(list(
+                n_agreements = NA_integer_,
+                n_disagreements = NA_integer_,
+                percentage_agreement = NA_real_
+            ))
+        }
+
+        a_set <- to_set(a)
+        b_set <- to_set(b)
+
+        n_agreements <- n_agreements_fn(a_set, b_set)
+        n_disagreements <- n_disagreements_fn(a_set, b_set)
+        percentage_agreement <- percentage_agreement_fn(n_agreements, n_disagreements)
+
+        list(
+            n_agreements = n_agreements,
+            n_disagreements = n_disagreements,
+            percentage_agreement = percentage_agreement
+        )
+    }, coder1, coder2, USE.NAMES = FALSE, SIMPLIFY = FALSE)
+
+    csv_df$n_agreements <- vapply(row_metrics, function(x) x$n_agreements, integer(1))
+    csv_df$n_disagreements <- vapply(row_metrics, function(x) x$n_disagreements, integer(1))
+    csv_df$percentage_agreement <- vapply(row_metrics, function(x) x$percentage_agreement, numeric(1))
+
+    csv_df
+}
+
+calculate_total_agreement <- function(
+    category_csv
+) {
+    total_agreements <- sum(category_csv[["n_agreements"]], na.rm = TRUE)
+    total_disagreements <- sum(category_csv[["n_disagreements"]], na.rm = TRUE)
+    denominator <- total_agreements + total_disagreements
+
+    total_percentage_agreement <- if (denominator == 0) {
+        NA_real_
+    } else {
+        (total_agreements / denominator) * 100
+    }
+
+    list(
+        n_agreements = total_agreements,
+        n_disagreements = total_disagreements,
+        percentage_agreement = total_percentage_agreement
+    )
 }
