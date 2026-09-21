@@ -5,11 +5,12 @@ As we do not have permission to publish students' data, none of this code will p
 
 The repository has the following structure:
 - `log_data_analysis.pdf/html/ipynb`: A jupyter notebook containing the analysis reported in the paper (we did not have ethical approval to publish students' log data so the running the notebook will result in errors).
+- `irr_calculation.ipynb`: A jupyter notebook documenting our intercoder reliability with Krippendorff's multi-value alpha. Note this will take several hours to run.
 - `analysis`: Materials used to analysis the log data, including:
   - `codebook.pdf`: The codebook used to code the log data (also in programmatic form in `codebook.json`).
   - `loading_services/`: Directory of files used to analyse the log data.
   - The utility files used for data analysis, such as retrieving students and exercise attempts with a particular code (`core_filter_functions.py` and `filter_functions.py`), statistical analysis (`stats_functions.py` and `stats_helper_function.py`), and data visualisation (`visualisation.py`).
-  - `irr`: Analysis files used to perform the agreement procedure using Krippendorff's multi-value alpha (see `irr_calculation.ipynb` for details of this).
+  - `irr`: Analysis files used to perform the agreement procedure using Krippendorff's multi-value alpha.
 - `results`: The final codebook with frequencies per student and exercise attempts (`codebook_frequency.csv`).
 - `study_materials`
   - `debugging_exercises`: The debugging exercises that students attempted. Contains the original erroneous Python programs posed to students (`*_original.py`) and the corrected versions (`*_correct.py`).
